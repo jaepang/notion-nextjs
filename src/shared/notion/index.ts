@@ -6,3 +6,4 @@ export const notion = new Client({
 })
 
 export * from './queryDatabase'
+export * from './retrievePage'

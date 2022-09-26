@@ -8,7 +8,7 @@ export default function Home({ prefetched }) {
 export const getStaticProps = async () => {
   const prefetched = await queryDatabase({
     database_id: process.env.NOTION_DATABASE_ID,
-    page_size: 16,
+    page_size: 50,
   })
 
   return {
