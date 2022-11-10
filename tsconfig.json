@@ -8,11 +8,7 @@
     */
     "module": "esnext",
     "target": "ES2019",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -26,27 +22,12 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@root/*": [
-        "./*"
-      ],
-      "@client/*": [
-        "./src/client/*"
-      ],
-      "@api/*": [
-        "./src/pages/api/*"
-      ],
-      "@components/*": [
-        "./src/client/components/*"
-      ],
-      "@styles/*": [
-        "./src/client/styles/*"
-      ],
-      "@server/*": [
-        "src/server/*"
-      ],
-      "@shared/*": [
-        "src/shared/*"
-      ]
+      "@root/*": ["./*"],
+      "@client/*": ["./src/client/*"],
+      "@api/*": ["./src/pages/api/*"],
+      "@components/*": ["./src/client/components/*"],
+      "@styles/*": ["./src/client/styles/*"],
+      "@shared/*": ["./src/shared/*"]
     },
     "plugins": [
       {
@@ -54,16 +35,8 @@
       }
     ]
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "global.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "global.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"

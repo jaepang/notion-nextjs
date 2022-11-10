@@ -1,9 +1,10 @@
+'use client'
+
 import { useDatabase } from '@root/src/client/hooks'
 import PageCard from '@components/PageCard'
 
-export default function HomePageComponent({ prefetched }) {
+export default function FeedPageComponent({ prefetched }) {
   const { items, isLoading, hasNextPage, fetchNextPage } = useDatabase(prefetched)
-  console.log(items)
 
   function handleLoadMore() {
     if (hasNextPage) fetchNextPage()

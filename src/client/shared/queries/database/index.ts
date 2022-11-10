@@ -1,5 +1,5 @@
 import axios, { AxiosError } from 'axios'
-import { QueryDatabaseBodyParameters } from '@root/src/client/types'
+import { QueryDatabaseBodyParameters } from '@client/types'
 import { DatabaseRes } from '@api/database'
 
 interface AxiosDatabaseRes {
@@ -8,6 +8,7 @@ interface AxiosDatabaseRes {
   code?: AxiosError['code']
 }
 
+/** client-side fetching */
 export async function fetchDatabase(variables: QueryDatabaseBodyParameters): Promise<AxiosDatabaseRes> {
   try {
     const res = await axios.post<DatabaseRes>('/api/database', variables)

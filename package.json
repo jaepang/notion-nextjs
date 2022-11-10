@@ -12,6 +12,7 @@
     "ts-node": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\""
   },
   "dependencies": {
+    "@next/font": "^13.0.2",
     "@notionhq/client": "^2.2.0",
     "@types/classnames": "^2.3.1",
     "axios": "^0.27.2",
