@@ -1,8 +1,9 @@
 /* 기본 속성 */
 :root {
-  --color-primary: #f76e11;
+  --color-primary: #6e8fda;
+  --color-secondary: #e088b9;
   --color-light: #ffffff;
-  --color-light-dimmed: #fafafa;
+  --color-light-dimmed: rgba(255, 255, 255, 0.5);
   --color-dark: #1a1a1a;
   --color-dark-dimmed: #2c2c2c;
   --color-gray-dimmed: #cacaca;
@@ -20,8 +21,8 @@
 
 /* 테마 속성 */
 :root {
-  --color-bg-primary: var(--color-light-dimmed);
-  --color-bg-secondary: var(--color-light);
+  --color-bg-primary: var(--color-light);
+  --color-bg-dimmed: var(--color-light-dimmed);
   --color-text-default: var(--color-text-black);
   --color-text-dimmed: var(--color-text-black-dimmed);
 

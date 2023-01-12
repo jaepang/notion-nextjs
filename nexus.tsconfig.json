@@ -9,7 +9,7 @@
     "paths": {
       "@root/*": ["./*"],
       "@client/*": ["./src/client/*"],
-      "@components/*": ["./src/client/components/*"],
+      "@components/*": ["./src/app/(service)/(_components)/*"],
       "@styles/*": ["./src/client/styles/*"],
       "@server/*": ["./src/server/*"],
       "@shared/*": ["./src/shared/*"]

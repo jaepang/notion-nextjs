@@ -25,7 +25,7 @@
       "@root/*": ["./*"],
       "@client/*": ["./src/client/*"],
       "@api/*": ["./src/pages/api/*"],
-      "@components/*": ["./src/client/components/*"],
+      "@components/*": ["./src/app/(service)/(_components)/*"],
       "@styles/*": ["./src/client/styles/*"],
       "@shared/*": ["./src/shared/*"]
     },

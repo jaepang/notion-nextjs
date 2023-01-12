@@ -7,7 +7,7 @@ export function useDatabase(prefetched: QueryDatabaseResponse) {
     ['database'],
     async ({ pageParam = prefetched?.next_cursor }) =>
       fetchDatabase({
-        page_size: 8,
+        page_size: 10,
         start_cursor: pageParam,
       }),
     {
